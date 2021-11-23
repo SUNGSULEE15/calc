@@ -1,31 +1,35 @@
 package calc;
 /*
- * »çÄ¢¿¬»ê Å¬·¡½º
+ * ì‚¬ì¹™ ì—°ì‚° í´ë˜ìŠ¤
  */
 public class calc {
-	// ´õÇÏ±â ¸Ş¼Òµå
-	public int plus(int num1, int num2) {
-//		int result = num1 + num2;
-//		System.out.println("µÎ ¼öÀÇ ´õÇÏ±â: " +  result);
+	
+	public static int plus2(int num1, int num2) {
 		return num1 + num2;
 	}
-	// »©±â ¸Ş¼Òµå
+
+	// ë”í•˜ê¸° ë©”ì†Œë“œ
+	public int plus(int num1, int num2) {
+//		int result = num1 + num2;
+//		System.out.println("ë‘ìˆ˜ì˜ ë”í•˜ê¸°: " + result);
+		return num1 + num2;
+	}
+	// ë¹¼ê¸° ë©”ì†Œë“œ
 	public int minus(int num1, int num2) {
 		return num1 - num2;
 	}
-	
-	// °öÇÏ±â ¸Ş¼Òµå
-	public int multiplication(int num1, int num2) {
-		return num1 * num2;	
+	// ê³±í•˜ê¸° ë©”ì†Œë“œ
+	public int multi(int num1, int num2) {
+		return num1 * num2;
+	}
+	// ë‚˜ëˆ„ê¸° ë©”ì†Œë“œ
+	public int div(int num1, int num2) {
+		return num1 / num2;
 	}
 	
-	// ³ª´©±â ¸Ş¼Òµå
-	public int division(int num1, int num2) {
-		return (num1 / num2);
-	}
-	
-	// ³ª¸ÓÁö ¸Ş¼Òµå
-	public int rest(int num1, int num2) {
-		return (num1 % num2);
+	// ëˆ ë³µì‚¬ê¸° ë©”ì†Œë“œ(3ë°° ë»¥íŠ€ê¸°)
+	public int pung(int m) {
+//		System.out.println("m = " + m * 3);
+		return m * 3;
 	}
 }
