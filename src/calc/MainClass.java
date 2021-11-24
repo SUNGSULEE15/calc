@@ -9,38 +9,32 @@ public class MainClass {
 		System.out.println("계산기 프로그램");
 		System.out.println("오늘날짜");
 		System.out.println(Util.getCurrentDate("yyyyMMdd"));
-		// 두개의 정수
-		int num1 = 10;
-		int num2 = 2;
-		int result = 0;
-		// 더하기
-//		result = num1 + num2;
-		calc cc = new calc();
-		result =  cc.plus(num1, num2);
-		System.out.println("두수의 더하기: " + result);
+
+		//두개의 정수 입력받기
+		// 계산기 클래스를 선언(객체생성, 인스턴스 생성)
+//		Calc2 cc2 = new Calc2();
+//		do {
+//			// 두개의 숫자를 입력
+//			System.out.println("두개의 숫자를 입력하시오: ");
+//			cc2.inputNumber();
+//			// 연산자를 입력하시오
+//			System.out.println("연산자를 입력하시오: ");
+//			cc2.inputOper();
+//		} while(! cc2.checkNum()); // 여기에서 수를 체크
+//		// 수 체크2
+//		cc2.checkNum();
+//		// 결과
+//		cc2.printResult();
 		
-		System.out.println("static 을 사용한 두수의 더하기: " + calc.plus2(num1, num2));
 		
-		
-//		// 빼기
-//		result = num1 - num2;
-//		System.out.println("두수의 빼기: " + result);
-//		// 곱하기
-//		result = num1 * num2;
-//		System.out.println("두수의 곱기: " + result);
-//		// 나누기
-//		result = num1 / num2;
-//		System.out.println("두수의 나누기: " + result);
-		
-		Test test = new Test();
-		test.method();
-		
-		int myMoney = 1000;
-		System.out.println("길을 가다가 돈 복사기를 주웠네");
-		System.out.println("내 돈 " + myMoney + "원을 넣어 보자");
-		// 돈 복사기 호출
-		myMoney = cc.pung(myMoney);
-		System.out.println("두구두구두구~ 내돈은 " + myMoney + "원!!!");
+		Calc3 cc3 = new Calc3();
+		// 입력
+		cc3.inputNum();
+		// 연산자를 입력 받고
+		cc3.inputOp();
+		// 출력
+		cc3.printResult();
 
 	}
+
 }

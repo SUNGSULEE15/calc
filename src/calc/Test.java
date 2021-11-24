@@ -12,6 +12,7 @@ public class Test {
 	
 	public void method(int number) {
 		System.out.println("나는 숫자를 받을 수 있는 method()");
+		System.out.println(3);
 	}
 	
 	public void method(int number1, int number2) {

@@ -2,8 +2,9 @@ package calc;
 /*
  * 사칙 연산 클래스
  */
-public class calc {
+public class Calc {
 	
+	// 인스턴스를 안만들고 바로 호출 가능
 	public static int plus2(int num1, int num2) {
 		return num1 + num2;
 	}
